@@ -1,17 +1,18 @@
 #include<stdio.h>
 main()
+{
+	int i,s,temp,ans,n;
+	
+	printf("Enter value N = ");
+	scanf("%d",&n);
+	temp=n;
+	
+	for(ans=0; n!=0; i++)
 	{
-		int i,n,temp,ans;
-		printf("enter value n = ");
-		scanf("%d",&i);
-		temp=n;
-		for(i=n>1)
-		if(i<=0)
-		{
-			printf("0 is nagative");
-		}
-		else
-		{
-			printf("1 is posetive element");
-		}
+		s=n%10;
+		ans=ans*10+s;
+		n=n/10;
+		
 	}
+	printf("%d",ans);
+}
